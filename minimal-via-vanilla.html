@@ -1,0 +1,18 @@
+<!doctype html><title>hi</title>
+
+<script>
+  // SOOO much faster than setTimeout
+  window.requestAnimationFrame(function() { 
+    const body = document.querySelector("body");
+
+    const el = document.createElement("h1");
+    el.innerHTML = "Hello";
+
+    const p = document.createElement("p");
+    p.innerHTML = "There";
+
+    body.appendChild(el);
+    body.appendChild(p);
+  });
+</script>
+
